@@ -64,8 +64,8 @@
 					optionsCopy.url = content.url;
 					optionsCopy.success = function(data) {
 						$('#'+options.id+' .'+options.decoratorContentClass).html(data);
-						$.box.data(data, id)
-						$.box.center(id);
+						$.box.data(data, options.id)
+						$.box.center(options.id);
 						success(data);
 					}
 					
